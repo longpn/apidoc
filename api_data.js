@@ -345,36 +345,6 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/knowledge",
-    "title": "Get all Knowledge",
-    "version": "0.3.0",
-    "name": "GetKnowledge",
-    "group": "Knowledge",
-    "permission": [
-      {
-        "name": "node"
-      }
-    ],
-    "description": "<p>Get list Knowledge</p>",
-    "success": {
-      "examples": [
-        {
-          "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"073ec8d0-1687-11e6-bc9b-45b3eb0c3c3c\",\n\t\t\t      \"name\": \"Đại học\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"id\": \"073er8d0-1687-11e6-bc9b-45b3eb0c3c3c\",\n\t\t\t      \"name\": \"Cao đẳng\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"id\": \"073er8d0-1687-11e6-bc9b-45b3eb0c3c45\",\n\t\t\t      \"name\": \"Trung học phổ thông\"\n\t\t\t    }]\n\t}",
-          "type": "json"
-        }
-      ]
-    },
-    "filename": "example/example.js",
-    "groupTitle": "Knowledge",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:9011/api/knowledge"
-      }
-    ]
-  },
-  {
-    "type": "get",
     "url": "/knowledge/:id",
     "title": "Get a Knowledge",
     "version": "0.3.0",
@@ -413,6 +383,36 @@ define({ "api": [
     "sampleRequest": [
       {
         "url": "http://localhost:9011/api/knowledge/:id"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/knowledge",
+    "title": "Get all Knowledge",
+    "version": "0.3.0",
+    "name": "GetKnowledge",
+    "group": "Knowledge",
+    "permission": [
+      {
+        "name": "node"
+      }
+    ],
+    "description": "<p>Get list Knowledge</p>",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"073ec8d0-1687-11e6-bc9b-45b3eb0c3c3c\",\n\t\t\t      \"name\": \"Đại học\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"id\": \"073er8d0-1687-11e6-bc9b-45b3eb0c3c3c\",\n\t\t\t      \"name\": \"Cao đẳng\"\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"id\": \"073er8d0-1687-11e6-bc9b-45b3eb0c3c45\",\n\t\t\t      \"name\": \"Trung học phổ thông\"\n\t\t\t    }]\n\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "example/example.js",
+    "groupTitle": "Knowledge",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9011/api/knowledge"
       }
     ]
   },
@@ -672,6 +672,215 @@ define({ "api": [
     "sampleRequest": [
       {
         "url": "http://localhost:9011/api/Personality/:id"
+      }
+    ]
+  },
+  {
+    "type": "post",
+    "url": "/Translation",
+    "title": "Create a Translation",
+    "version": "0.3.0",
+    "name": "AddTranslation",
+    "group": "Translation",
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "description": "<p>Add new Translation</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>The Translation-name.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": []\n\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "example/example.js",
+    "groupTitle": "Translation",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9011/api/Translation"
+      }
+    ]
+  },
+  {
+    "type": "delete",
+    "url": "/Translation/:id",
+    "title": "Delete a Translation",
+    "version": "0.3.0",
+    "name": "DeleteTranslation",
+    "group": "Translation",
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "description": "<p>Delete a Translation</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The Translation-id.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": []\n\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "example/example.js",
+    "groupTitle": "Translation",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9011/api/Translation/:id"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/Translation",
+    "title": "Get all Translation",
+    "version": "0.3.0",
+    "name": "GetTranslation",
+    "group": "Translation",
+    "permission": [
+      {
+        "name": "node"
+      }
+    ],
+    "description": "<p>Get list Translation</p>",
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"f00dc430-fe58-11e6-9c48-d7af2d19e051\",\n\t\t\t      \"name\": \"tbl_account\",\n\t\t\t      \"content\": \"Tai khoan\",\n\t\t\t      \"langcode\": \"vi\",\n\t\t\t      \"datecreated\": \"2017-03-01T08:27:41.000Z\",\n\t\t\t      \"datemodified\": \"2017-03-01T08:27:41.000Z\"\n\t\t\t    }]\n\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "example/example.js",
+    "groupTitle": "Translation",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9011/api/Translation"
+      }
+    ]
+  },
+  {
+    "type": "put",
+    "url": "/translation/:id",
+    "title": "Update a translation",
+    "version": "0.3.0",
+    "name": "PutTranslation",
+    "group": "Translation",
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "description": "<p>Change info Translation</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The Translation-id.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>nam of the Translation.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": []\n\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "example/example.js",
+    "groupTitle": "Translation",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9011/api/translation/:id"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/Translation/:id",
+    "title": "Get a Translation",
+    "version": "0.3.0",
+    "name": "Translation",
+    "group": "Translation",
+    "permission": [
+      {
+        "name": "node"
+      }
+    ],
+    "description": "<p>Get data detail of a Translation</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The Translation-ID.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t   {\n\t\t\t      \"id\": \"f00dc430-fe58-11e6-9c48-d7af2d19e051\",\n\t\t\t      \"name\": \"tbl_account\",\n\t\t\t      \"content\": \"Tai khoan\",\n\t\t\t      \"langcode\": \"vi\",\n\t\t\t      \"datecreated\": \"2017-03-01T08:27:41.000Z\",\n\t\t\t      \"datemodified\": \"2017-03-01T08:27:41.000Z\"\n\t\t\t    }\n\t\t\t  ]\n\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "example/example.js",
+    "groupTitle": "Translation",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9011/api/Translation/:id"
       }
     ]
   },
