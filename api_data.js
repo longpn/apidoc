@@ -348,7 +348,7 @@ define({ "api": [
     "url": "/knowledge/:id",
     "title": "Get a Knowledge",
     "version": "0.3.0",
-    "name": "GetKnowledge",
+    "name": "GetDetailKnowledge",
     "group": "Knowledge",
     "permission": [
       {
@@ -677,7 +677,7 @@ define({ "api": [
   },
   {
     "type": "post",
-    "url": "/Translation",
+    "url": "/translation",
     "title": "Create a Translation",
     "version": "0.3.0",
     "name": "AddTranslation",
@@ -714,13 +714,13 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Translation"
+        "url": "http://localhost:9011/api/translation"
       }
     ]
   },
   {
     "type": "delete",
-    "url": "/Translation/:id",
+    "url": "/translation/:id",
     "title": "Delete a Translation",
     "version": "0.3.0",
     "name": "DeleteTranslation",
@@ -757,13 +757,13 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Translation/:id"
+        "url": "http://localhost:9011/api/translation/:id"
       }
     ]
   },
   {
     "type": "get",
-    "url": "/Translation",
+    "url": "/translation",
     "title": "Get all Translation",
     "version": "0.3.0",
     "name": "GetTranslation",
@@ -787,7 +787,7 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Translation"
+        "url": "http://localhost:9011/api/translation"
       }
     ]
   },
@@ -843,7 +843,7 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/Translation/:id",
+    "url": "/translation/:id",
     "title": "Get a Translation",
     "version": "0.3.0",
     "name": "Translation",
@@ -880,7 +880,7 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Translation/:id"
+        "url": "http://localhost:9011/api/translation/:id"
       }
     ]
   },
@@ -1114,29 +1114,8 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "age",
-            "description": "<p>age of the User</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
             "field": "avatar",
             "description": "<p>avatar of the User</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "knowledgeid",
-            "description": "<p>knowledgeid of the User</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "personalityid",
-            "description": "<p>personalityid of the User</p>"
           },
           {
             "group": "Parameter",
@@ -1165,13 +1144,6 @@ define({ "api": [
             "optional": false,
             "field": "type",
             "description": "<p>type of the User (social network type)</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "datecreated",
-            "description": "<p>datecreated of the User</p>"
           }
         ]
       }
@@ -1246,14 +1218,14 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Array",
             "optional": false,
             "field": "knowledgeid",
             "description": "<p>knowledgeid of the User</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Array",
             "optional": false,
             "field": "personalityid",
             "description": "<p>personalityid of the User</p>"
@@ -1285,13 +1257,6 @@ define({ "api": [
             "optional": false,
             "field": "type",
             "description": "<p>type of the User (social network type)</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "datemodified",
-            "description": "<p>datemodified of the User</p>"
           }
         ]
       }
