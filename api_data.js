@@ -1204,7 +1204,7 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Int",
             "optional": false,
             "field": "age",
             "description": "<p>age of the User</p>"
@@ -1235,7 +1235,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "gender",
-            "description": "<p>gender of the User</p>"
+            "description": "<p>gender of the User (male | female)</p>"
           },
           {
             "group": "Parameter",
@@ -1253,10 +1253,10 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Int",
             "optional": false,
             "field": "type",
-            "description": "<p>type of the User (social network type)</p>"
+            "description": "<p>type of the User (social network type 1: facebook, 2: google, 3: instagram)</p>"
           }
         ]
       }
