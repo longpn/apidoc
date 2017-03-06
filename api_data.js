@@ -1218,17 +1218,17 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "Array",
+            "type": "String",
             "optional": false,
             "field": "knowledgeid",
-            "description": "<p>knowledgeid of the User</p>"
+            "description": "<p>knowledgeid of the User (1,2,3)</p>"
           },
           {
             "group": "Parameter",
-            "type": "Array",
+            "type": "String",
             "optional": false,
             "field": "personalityid",
-            "description": "<p>personalityid of the User</p>"
+            "description": "<p>personalityid of the User(1,2,3)</p>"
           },
           {
             "group": "Parameter",
