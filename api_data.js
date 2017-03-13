@@ -1277,6 +1277,56 @@ define({ "api": [
     }
   },
   {
+    "type": "put",
+    "url": "/user/:id/upload",
+    "title": "Update avatar a User",
+    "version": "0.3.0",
+    "name": "PutUserAvatar",
+    "group": "User",
+    "permission": [
+      {
+        "name": "none"
+      }
+    ],
+    "description": "<p>Change avatar a user</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "id",
+            "description": "<p>The Users-ID.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "File",
+            "optional": false,
+            "field": "avatar",
+            "description": "<p>avatar of the User.</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [{\"avatar\": \"url\"}]\n\t}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "example/example.js",
+    "groupTitle": "User",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:9011/api/user/:id/upload"
+      }
+    ]
+  },
+  {
     "type": "post",
     "url": "/user/:id/setting",
     "title": "Setting a user",
