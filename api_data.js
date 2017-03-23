@@ -186,7 +186,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "type",
-            "description": "<p>type of the Job.</p>"
+            "description": "<p>type of the Job(0: Cho thue, 1: Thue).</p>"
           },
           {
             "group": "Parameter",
@@ -197,14 +197,14 @@ define({ "api": [
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Float",
             "optional": false,
             "field": "price",
             "description": "<p>price of the Job</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Int",
             "optional": false,
             "field": "duration",
             "description": "<p>duration hours of the Job</p>"
@@ -221,18 +221,18 @@ define({ "api": [
             "type": "Array",
             "optional": false,
             "field": "jobtype",
-            "description": "<p>jobtype array string of the Job</p>"
+            "description": "<p>jobtype array string of the Job ([1,2,3])</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Float",
             "optional": false,
             "field": "longitude",
             "description": "<p>longitude of the Job</p>"
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Float",
             "optional": false,
             "field": "latitude",
             "description": "<p>latitude of the Job</p>"
