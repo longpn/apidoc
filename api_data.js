@@ -1,7 +1,7 @@
 define({ "api": [
   {
     "type": "get",
-    "url": "/:id",
+    "url": "/job/:id",
     "title": "Get job detail",
     "version": "0.3.0",
     "name": "GetJob",
@@ -38,16 +38,16 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/:id"
+        "url": "http://localhost:9011/api/job/:id"
       }
     ]
   },
   {
     "type": "get",
-    "url": "/nearbyme/:latitude/:longitude",
-    "title": "Get job at a location",
+    "url": "/job/nearbyme/",
+    "title": "Search job",
     "version": "0.3.0",
-    "name": "GetJobByLocation",
+    "name": "GetJobNearbyme",
     "group": "Job",
     "permission": [
       {
@@ -60,17 +60,80 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "Float",
             "optional": false,
             "field": "latitude",
-            "description": "<p>The latitude.</p>"
+            "description": "<p>The latitude is required.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Float",
+            "optional": false,
+            "field": "longitude",
+            "description": "<p>The longitude is required.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Int",
+            "optional": false,
+            "field": "distance",
+            "description": "<p>The distance is required.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Float",
+            "optional": false,
+            "field": "price",
+            "description": ""
           },
           {
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "longitude",
-            "description": "<p>The longitude.</p>"
+            "field": "gender",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Int",
+            "optional": false,
+            "field": "fromage",
+            "description": "<p>The from age</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Int",
+            "optional": false,
+            "field": "toage",
+            "description": "<p>The to age</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Int",
+            "optional": false,
+            "field": "duration",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "day",
+            "optional": false,
+            "field": "day",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "fromhour",
+            "optional": false,
+            "field": "fromhour",
+            "description": "<p>The from hour of a day</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "tohour",
+            "optional": false,
+            "field": "tohour",
+            "description": "<p>The to hour of a day</p>"
           }
         ]
       }
@@ -79,7 +142,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"078fe290-ecfd-11e6-8945-e7b33c1470a9\",\n\t      \"longitude\": 106.627,\n\t      \"latitude\": 10.8509,\n\t      \"type\": 0,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datecreated\": \"2017-02-07T06:16:57.000Z\"\n\t    },\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t      \"longitude\": 106.681,\n\t      \"latitude\": 10.8103,\n\t      \"type\": 0,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datecreated\": \"2017-02-07T06:17:41.000Z\"\n\t    }\n\t  ]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"Michael\",\n\t      \"age\": 30,\n\t      \"gender\": \"Male\",\n\t      \"avatar\": \"avatar_1490342179486.jpeg\",\n\t      \"knowledgeid\": \"a,073ec8d0-1687-11e6-bc9b-45b3eb0c3c3c,073er8d0-1687-11e6-bc9b-45b3eb0c3c3c,073er8d0-1687-11e6-bc9b-45b3eb0c3c45\",\n\t      \"personalityid\": \"a,073ec8d0-162-11e6-bc8a-45b3eb0c3c89\",\n\t      \"id\": \"bb76eec0-103e-11e7-b8de-1d15ca732413\",\n\t      \"longitude\": 106.614,\n\t      \"latitude\": 10.8453,\n\t      \"type\": 0,\n\t      \"price\": 100000,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 1,\n\t      \"datecreated\": \"2017-03-24T03:05:27.000Z\",\n\t      \"fromhour\": null,\n\t      \"tohour\": null,\n\t      \"day\": null,\n\t      \"typeid\": \"082ec8d0-1687-11e6-bc8a-45b3eb0c3c57\",\n\t      \"distance\": 1.5770705974299295\n\t    }\n\t  ]\n\t}",
           "type": "json"
         }
       ]
@@ -88,13 +151,13 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/nearbyme/:latitude/:longitude"
+        "url": "http://localhost:9011/api/job/nearbyme/"
       }
     ]
   },
   {
     "type": "get",
-    "url": "/user/:id",
+    "url": "/job/user/:id",
     "title": "Get my job",
     "version": "0.3.0",
     "name": "GetMyJob",
@@ -131,13 +194,13 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/:id"
+        "url": "http://localhost:9011/api/job/user/:id"
       }
     ]
   },
   {
     "type": "get",
-    "url": "/type",
+    "url": "/job/type",
     "title": "Get all type",
     "version": "0.3.0",
     "name": "GetType",
@@ -161,7 +224,7 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/type"
+        "url": "http://localhost:9011/api/job/type"
       }
     ]
   },
