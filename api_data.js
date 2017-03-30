@@ -29,7 +29,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t      \"userid\": \"08eb3ed0-ec37-11e6-891a-6573654d38a\",\n\t      \"longitude\": 106.681,\n\t      \"latitude\": 10.8103,\n\t      \"type\": [\n\t        {\n\t          \"flagid\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"typeid\": \"6\"\n\t        },\n\t        {\n\t          \"flagid\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"typeid\": \"7\"\n\t        }\n\t      ],\n\t      \"validfromdate\": null,\n\t      \"validtodate\": null,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datemodified\": \"2017-02-07T06:17:41.000Z\",\n\t      \"datecreated\": \"2017-02-07T06:17:41.000Z\",\n\t      \"status\": 1,\n\t      \"day\": [\n\t        {\n\t          \"id\": \"2141a4d0-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"flagid\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"day\": \"0000-00-00 00:00:00\",\n\t          \"fromhour\": \"1\",\n\t          \"tohour\": \"2\"\n\t        },\n\t        {\n\t          \"id\": \"2141cbe0-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"flagid\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"day\": \"0000-00-00 00:00:00\",\n\t          \"fromhour\": \"3\",\n\t          \"tohour\": \"4\"\n\t        }\n\t      ]\n\t    }\n\t  ]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t      \"userid\": \"08eb3ed0-ec37-11e6-891a-6573654d38a\",\n\t      \"longitude\": 106.681,\n\t      \"latitude\": 10.8103,\n\t      \"type\": [\"6\",\"7\"]\n\t      ,\n\t      \"validfromdate\": null,\n\t      \"validtodate\": null,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datemodified\": 1490844228555,\n\t      \"datecreated\": 1490844228555,\n\t      \"status\": 1,\n\t      \"day\": [\n\t        {\n\t          \"id\": \"2141a4d0-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"flagid\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"day\": 1490844228555,\n\t          \"fromhour\": \"1\",\n\t          \"tohour\": \"2\"\n\t        },\n\t        {\n\t          \"id\": \"2141cbe0-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"flagid\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t          \"day\": 1490844228555,\n\t          \"fromhour\": \"3\",\n\t          \"tohour\": \"4\"\n\t        }\n\t      ]\n\t    }\n\t  ]\n\t}",
           "type": "json"
         }
       ]
@@ -38,7 +38,7 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/job/:id"
+        "url": "http://dt.rasia.wiki/api/job/:id"
       }
     ]
   },
@@ -142,7 +142,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"Michael\",\n\t      \"age\": 30,\n\t      \"gender\": \"Male\",\n\t      \"avatar\": \"avatar_1490342179486.jpeg\",\n\t      \"knowledgeid\": \"a,073ec8d0-1687-11e6-bc9b-45b3eb0c3c3c,073er8d0-1687-11e6-bc9b-45b3eb0c3c3c,073er8d0-1687-11e6-bc9b-45b3eb0c3c45\",\n\t      \"personalityid\": \"a,073ec8d0-162-11e6-bc8a-45b3eb0c3c89\",\n\t      \"id\": \"bb76eec0-103e-11e7-b8de-1d15ca732413\",\n\t      \"longitude\": 106.614,\n\t      \"latitude\": 10.8453,\n\t      \"type\": 0,\n\t      \"price\": 100000,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 1,\n\t      \"datecreated\": \"2017-03-24T03:05:27.000Z\",\n\t      \"fromhour\": null,\n\t      \"tohour\": null,\n\t      \"day\": null,\n\t      \"typeid\": \"082ec8d0-1687-11e6-bc8a-45b3eb0c3c57\",\n\t      \"distance\": 1.5770705974299295\n\t    }\n\t  ]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"Michael\",\n\t      \"age\": 30,\n\t      \"gender\": \"Male\",\n\t      \"avatar\": \"avatar_1490342179486.jpeg\",\n\t      \"knowledgeid\": \"a,073ec8d0-1687-11e6-bc9b-45b3eb0c3c3c,073er8d0-1687-11e6-bc9b-45b3eb0c3c3c,073er8d0-1687-11e6-bc9b-45b3eb0c3c45\",\n\t      \"personalityid\": \"a,073ec8d0-162-11e6-bc8a-45b3eb0c3c89\",\n\t      \"id\": \"bb76eec0-103e-11e7-b8de-1d15ca732413\",\n\t      \"longitude\": 106.614,\n\t      \"latitude\": 10.8453,\n\t      \"type\": 0,\n\t      \"price\": 100000,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 1,\n\t      \"datecreated\": 1490844228555,\n\t      \"fromhour\": 4,\n\t      \"tohour\": 8,\n\t      \"day\": 1490844228555,\n\t      \"typeid\": \"082ec8d0-1687-11e6-bc8a-45b3eb0c3c57\",\n\t      \"distance\": 1.5770705974299295\n\t    }\n\t  ]\n\t}",
           "type": "json"
         }
       ]
@@ -151,7 +151,7 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/job/nearbyme/"
+        "url": "http://dt.rasia.wiki/api/job/nearbyme/"
       }
     ]
   },
@@ -185,7 +185,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"078fe290-ecfd-11e6-8945-e7b33c1470a9\",\n\t      \"longitude\": 106.627,\n\t      \"latitude\": 10.8509,\n\t      \"type\": 0,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datecreated\": \"2017-02-07T06:16:57.000Z\"\n\t    },\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t      \"longitude\": 106.681,\n\t      \"latitude\": 10.8103,\n\t      \"type\": 0,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datecreated\": \"2017-02-07T06:17:41.000Z\"\n\t    }\n\t  ]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"success\",\n\t  \"data\": [\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"078fe290-ecfd-11e6-8945-e7b33c1470a9\",\n\t      \"longitude\": 106.627,\n\t      \"latitude\": 10.8509,\n\t      \"type\": 0,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datecreated\": 1490844228555\n\t    },\n\t    {\n\t      \"name\": \"long\",\n\t      \"avatar\": \"/upload.jpg\",\n\t      \"knowledgeid\": null,\n\t      \"personalityid\": null,\n\t      \"id\": \"21409360-ecfd-11e6-913f-f7ec3e7e0df7\",\n\t      \"longitude\": 106.681,\n\t      \"latitude\": 10.8103,\n\t      \"type\": 0,\n\t      \"price\": 1,\n\t      \"currency\": \"VND\",\n\t      \"duration\": 2,\n\t      \"datecreated\": 1490844228555\n\t    }\n\t  ]\n\t}",
           "type": "json"
         }
       ]
@@ -194,7 +194,7 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/job/user/:id"
+        "url": "http://dt.rasia.wiki/api/job/user/:id"
       }
     ]
   },
@@ -224,7 +224,7 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/job/type"
+        "url": "http://dt.rasia.wiki/api/job/type"
       }
     ]
   },
@@ -277,7 +277,7 @@ define({ "api": [
             "type": "Array",
             "optional": false,
             "field": "jobday",
-            "description": "<p>jobday array object item = {day, from, to} of the Job</p>"
+            "description": "<p>jobday array object [{&quot;day&quot;:&quot;1490844228555&quot;, &quot;from&quot;: &quot;5&quot; , &quot;to&quot;: &quot;7&quot;},{...}]</p>"
           },
           {
             "group": "Parameter",
@@ -316,7 +316,7 @@ define({ "api": [
     "groupTitle": "Job",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/job"
+        "url": "http://dt.rasia.wiki/api/job"
       }
     ]
   },
@@ -359,7 +359,7 @@ define({ "api": [
     "groupTitle": "Knowledge",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/knowledge"
+        "url": "http://dt.rasia.wiki/api/knowledge"
       }
     ]
   },
@@ -402,7 +402,7 @@ define({ "api": [
     "groupTitle": "Knowledge",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/knowledge/:id"
+        "url": "http://dt.rasia.wiki/api/knowledge/:id"
       }
     ]
   },
@@ -445,7 +445,7 @@ define({ "api": [
     "groupTitle": "Knowledge",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/knowledge/:id"
+        "url": "http://dt.rasia.wiki/api/knowledge/:id"
       }
     ]
   },
@@ -475,7 +475,7 @@ define({ "api": [
     "groupTitle": "Knowledge",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/knowledge"
+        "url": "http://dt.rasia.wiki/api/knowledge"
       }
     ]
   },
@@ -525,7 +525,7 @@ define({ "api": [
     "groupTitle": "Knowledge",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/knowledge/:id"
+        "url": "http://dt.rasia.wiki/api/knowledge/:id"
       }
     ]
   },
@@ -568,7 +568,7 @@ define({ "api": [
     "groupTitle": "Personality",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Personality"
+        "url": "http://dt.rasia.wiki/api/Personality"
       }
     ]
   },
@@ -611,7 +611,7 @@ define({ "api": [
     "groupTitle": "Personality",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Personality/:id"
+        "url": "http://dt.rasia.wiki/api/Personality/:id"
       }
     ]
   },
@@ -641,7 +641,7 @@ define({ "api": [
     "groupTitle": "Personality",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Personality"
+        "url": "http://dt.rasia.wiki/api/Personality"
       }
     ]
   },
@@ -684,7 +684,7 @@ define({ "api": [
     "groupTitle": "Personality",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Personality/:id"
+        "url": "http://dt.rasia.wiki/api/Personality/:id"
       }
     ]
   },
@@ -734,7 +734,7 @@ define({ "api": [
     "groupTitle": "Personality",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/Personality/:id"
+        "url": "http://dt.rasia.wiki/api/Personality/:id"
       }
     ]
   },
@@ -777,7 +777,7 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/translation"
+        "url": "http://dt.rasia.wiki/api/translation"
       }
     ]
   },
@@ -820,7 +820,7 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/translation/:id"
+        "url": "http://dt.rasia.wiki/api/translation/:id"
       }
     ]
   },
@@ -841,7 +841,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"f00dc430-fe58-11e6-9c48-d7af2d19e051\",\n\t\t\t      \"name\": \"tbl_account\",\n\t\t\t      \"content\": \"Tai khoan\",\n\t\t\t      \"langcode\": \"vi\",\n\t\t\t      \"datecreated\": \"2017-03-01T08:27:41.000Z\",\n\t\t\t      \"datemodified\": \"2017-03-01T08:27:41.000Z\"\n\t\t\t    }]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"f00dc430-fe58-11e6-9c48-d7af2d19e051\",\n\t\t\t      \"name\": \"tbl_account\",\n\t\t\t      \"content\": \"Tai khoan\",\n\t\t\t      \"langcode\": \"vi\",\n\t\t\t      \"datecreated\": 1490844228555,\n\t\t\t      \"datemodified\": 1490844228555\n\t\t\t    }]\n\t}",
           "type": "json"
         }
       ]
@@ -850,7 +850,7 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/translation"
+        "url": "http://dt.rasia.wiki/api/translation"
       }
     ]
   },
@@ -900,7 +900,7 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/translation/:id"
+        "url": "http://dt.rasia.wiki/api/translation/:id"
       }
     ]
   },
@@ -934,7 +934,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t   {\n\t\t\t      \"id\": \"f00dc430-fe58-11e6-9c48-d7af2d19e051\",\n\t\t\t      \"name\": \"tbl_account\",\n\t\t\t      \"content\": \"Tai khoan\",\n\t\t\t      \"langcode\": \"vi\",\n\t\t\t      \"datecreated\": \"2017-03-01T08:27:41.000Z\",\n\t\t\t      \"datemodified\": \"2017-03-01T08:27:41.000Z\"\n\t\t\t    }\n\t\t\t  ]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t   {\n\t\t\t      \"id\": \"f00dc430-fe58-11e6-9c48-d7af2d19e051\",\n\t\t\t      \"name\": \"tbl_account\",\n\t\t\t      \"content\": \"Tai khoan\",\n\t\t\t      \"langcode\": \"vi\",\n\t\t\t      \"datecreated\": 1490844228555,\n\t\t\t      \"datemodified\": 1490844228555\n\t\t\t    }\n\t\t\t  ]\n\t}",
           "type": "json"
         }
       ]
@@ -943,7 +943,7 @@ define({ "api": [
     "groupTitle": "Translation",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/translation/:id"
+        "url": "http://dt.rasia.wiki/api/translation/:id"
       }
     ]
   },
@@ -986,7 +986,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/:id"
+        "url": "http://dt.rasia.wiki/api/user/:id"
       }
     ]
   },
@@ -1007,7 +1007,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"0bb5e5a0-ec39-11e6-bf10-cf0b0041062\",\n\t\t\t      \"name\": \"long\",\n\t\t\t      \"age\": null,\n\t\t\t      \"avatar\": \"/upload.jpg\",\n\t\t\t      \"knowledgeid\": null,\n\t\t\t      \"personalityid\": null,\n\t\t\t      \"datecreated\": \"2017-02-06T06:54:03.000Z\",\n\t\t\t      \"datemodified\": \"2017-02-06T06:54:03.000Z\",\n\t\t\t      \"gender\": 0,\n\t\t\t      \"status\": 1,\n\t\t\t      \"email\": \"long@gmail.com\",\n\t\t\t      \"snid\": \"12312312324578901015654956\",\n\t\t\t      \"sntoken\": \"11111111\",\n\t\t\t      \"type\": 1\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"id\": \"0e0d26e0-fa41-11e6-bf52-1978d01519b2\",\n\t\t\t      \"name\": \"long\",\n\t\t\t      \"age\": null,\n\t\t\t      \"avatar\": \"avatar\",\n\t\t\t      \"knowledgeid\": null,\n\t\t\t      \"personalityid\": null,\n\t\t\t      \"datecreated\": \"2017-02-24T03:26:39.000Z\",\n\t\t\t      \"datemodified\": \"2017-02-24T03:26:39.000Z\",\n\t\t\t      \"gender\": 123,\n\t\t\t      \"status\": 1,\n\t\t\t      \"email\": \"long@gmail.com\",\n\t\t\t      \"snid\": \"9123123123245789010105555555556619997\",\n\t\t\t      \"sntoken\": \"facebooktoken\",\n\t\t\t      \"type\": 1\n\t\t\t    }]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"0bb5e5a0-ec39-11e6-bf10-cf0b0041062\",\n\t\t\t      \"name\": \"long\",\n\t\t\t      \"age\": null,\n\t\t\t      \"avatar\": \"/upload.jpg\",\n\t\t\t      \"knowledgeid\": null,\n\t\t\t      \"personalityid\": null,\n\t\t\t      \"datecreated\": 1490844228555,\n\t\t\t      \"datemodified\": 1490844228555,\n\t\t\t      \"gender\": 0,\n\t\t\t      \"status\": 1,\n\t\t\t      \"email\": \"long@gmail.com\",\n\t\t\t      \"snid\": \"12312312324578901015654956\",\n\t\t\t      \"sntoken\": \"11111111\",\n\t\t\t      \"type\": 1\n\t\t\t    },\n\t\t\t    {\n\t\t\t      \"id\": \"0e0d26e0-fa41-11e6-bf52-1978d01519b2\",\n\t\t\t      \"name\": \"long\",\n\t\t\t      \"age\": null,\n\t\t\t      \"avatar\": \"avatar\",\n\t\t\t      \"knowledgeid\": null,\n\t\t\t      \"personalityid\": null,\n\t\t\t      \"datecreated\": 1490844228555,\n\t\t\t      \"datemodified\": 1490844228555,\n\t\t\t      \"gender\": 123,\n\t\t\t      \"status\": 1,\n\t\t\t      \"email\": \"long@gmail.com\",\n\t\t\t      \"snid\": \"9123123123245789010105555555556619997\",\n\t\t\t      \"sntoken\": \"facebooktoken\",\n\t\t\t      \"type\": 1\n\t\t\t    }]\n\t}",
           "type": "json"
         }
       ]
@@ -1016,7 +1016,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user"
+        "url": "http://dt.rasia.wiki/api/user"
       }
     ]
   },
@@ -1050,7 +1050,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"0fc0ca50-fa41-11e6-bf52-1978d01519b2\",\n\t\t\t      \"name\": \"long\",\n\t\t\t      \"age\": null,\n\t\t\t      \"avatar\": \"avatar\",\n\t\t\t      \"knowledgeid\": \"2\",\n\t\t\t      \"personalityid\": \"1\",\n\t\t\t      \"datecreated\": \"2017-02-24T03:26:42.000Z\",\n\t\t\t      \"datemodified\": \"2017-02-24T03:31:03.000Z\",\n\t\t\t      \"gender\": 123,\n\t\t\t      \"status\": 1,\n\t\t\t      \"email\": \"long@gmail.com\",\n\t\t\t      \"snid\": \"9123123123245789010105555555556619997\",\n\t\t\t      \"sntoken\": \"facebooktoken\",\n\t\t\t      \"type\": 1\n\t\t\t    }\n\t\t\t  ]\n\t}",
+          "content": "    {\n\t  \"error\": false,\n\t  \"message\": \"Success\",\n\t  \"data\": [\n\t\t\t    {\n\t\t\t      \"id\": \"0fc0ca50-fa41-11e6-bf52-1978d01519b2\",\n\t\t\t      \"name\": \"long\",\n\t\t\t      \"age\": null,\n\t\t\t      \"avatar\": \"avatar\",\n\t\t\t      \"knowledgeid\": \"2\",\n\t\t\t      \"personalityid\": \"1\",\n\t\t\t      \"datecreated\": 1490844228555,\n\t\t\t      \"datemodified\": 1490844228555,\n\t\t\t      \"gender\": 123,\n\t\t\t      \"status\": 1,\n\t\t\t      \"email\": \"long@gmail.com\",\n\t\t\t      \"snid\": \"9123123123245789010105555555556619997\",\n\t\t\t      \"sntoken\": \"facebooktoken\",\n\t\t\t      \"type\": 1\n\t\t\t    }\n\t\t\t  ]\n\t}",
           "type": "json"
         }
       ]
@@ -1071,7 +1071,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/:id"
+        "url": "http://dt.rasia.wiki/api/user/:id"
       }
     ]
   },
@@ -1139,7 +1139,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/:id"
+        "url": "http://dt.rasia.wiki/api/user/:id"
       }
     ]
   },
@@ -1224,7 +1224,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/login"
+        "url": "http://dt.rasia.wiki/api/user/login"
       }
     ]
   },
@@ -1316,7 +1316,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/:id"
+        "url": "http://dt.rasia.wiki/api/user/:id"
       }
     ],
     "error": {
@@ -1385,7 +1385,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/:id/upload"
+        "url": "http://dt.rasia.wiki/api/user/:id/upload"
       }
     ]
   },
@@ -1428,7 +1428,7 @@ define({ "api": [
     "groupTitle": "User",
     "sampleRequest": [
       {
-        "url": "http://localhost:9011/api/user/:id/setting"
+        "url": "http://dt.rasia.wiki/api/user/:id/setting"
       }
     ]
   }
